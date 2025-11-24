@@ -1,0 +1,14 @@
+* {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root{
+--primary-color:#95B0E5;
+--secondary-color:#285A97;
+--neutral-01: #FFFFFF;
+--neutral-02: #161B21;
+--neutral-03: #979dac;
+}
