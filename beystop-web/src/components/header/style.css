@@ -1,4 +1,4 @@
-@import url('../../../index.css');
+@import url('../../index.css');
 header{
     background-color: var(--neutral-02);
     display: flex;
