@@ -1,6 +1,7 @@
 @import url('../../index.css');
-header{
-    background-color: var(--neutral-02);
+
+header {
+    background-color: var(--neutral-04);
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -8,32 +9,41 @@ header{
     padding: 20px 56px;
 }
 
-.nav-header ul{
+.nav-header ul {
     list-style: none;
     display: flex;
     gap: 62px;
 }
 
-header img{
+.nav-header ul li {
+    font-size: var(--text-body-small);
+
+}
+
+header img {
     width: 54px;
     height: 51px;
 }
 
-.btns-header{
+.btns-header {
     display: flex;
     gap: 30px;
 }
-.btn-login{
+
+.btn-login {
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 6px;
     color: var(--neutral-01);
-      text-decoration: none;
+    text-decoration: none;
+    font-size: var(--text-body-small);
 }
-.btn-cadastro{
+
+.btn-cadastro {
     background-color: var(--primary-color);
-     padding: 10px;
+    padding: 10px;
     border-radius: 6px;
-     text-decoration: none;
+    text-decoration: none;
     color: var(--neutral-01);
+    font-size: var(--text-body-small);
 }

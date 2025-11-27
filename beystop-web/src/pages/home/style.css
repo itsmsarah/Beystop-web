@@ -1,23 +1,27 @@
 @import url('../../index.css');
 
-body{
-      margin: 0;
-      padding: 0;
-      background-image:url('../../assets/images/filmbey.png') ;
-      background-size: cover;       
-      background-position: center; 
-      background-repeat: no-repeat; 
-      height: 100vh;                
-}
-.container-home{
-    position: relative;
+.container-home {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color: var(--neutral-01);
+    text-align: center;
+    background-color: var(--neutral-04);
+    border-radius: 6px;
+
 }
 
-body h1{
+ .container-home h1 {
     color: var(--neutral-01);
     font-size: var(--headliner-01);
-    background-color: var(--neutral-04);
-    width: 458px;
     padding: 10px;
     text-align: center;
+    margin-bottom: 10px;
+}
+.content-home p{
+    padding: 10px;
+    font-size: var(--text-body-big);
+    font-weight: bolder;
+
 }
