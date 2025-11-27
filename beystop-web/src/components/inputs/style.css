@@ -1,0 +1,26 @@
+@import url('../../index.css');
+
+
+.container-input{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+input {
+  width: 376px;
+  height: 54px;
+  padding: 16px 8px;
+  border-radius: 6px;
+  border: 1px solid var(--neutral-02);
+  background-color: var(--neutral-01);
+  color: var(--neutral-01);
+}
+label{
+      color: var(--neutral-01);
+  font-size: var(--text-body-big);
+}
+
+input::placeholder {
+  color: var(--neutral-04);
+  font-size: var(--text-btn);
+}

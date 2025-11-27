@@ -47,3 +47,9 @@ header img {
     color: var(--neutral-01);
     font-size: var(--text-body-small);
 }
+.btn-login:hover{
+    transform: scale(1.05);
+}
+.btn-cadastro:hover{
+    transform: scale(1.05);
+}

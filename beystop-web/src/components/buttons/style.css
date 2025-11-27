@@ -1,0 +1,15 @@
+@import url('../../index.css');
+
+button{
+    background-color: var(--neutral-01);
+    padding: 10px;
+    border-radius: 8px;
+    width: 270px;
+    height: 54px;
+      cursor: pointer;
+  transition: transform 0.2s ease;
+  font-size: var(--text-body-small);
+}
+button:hover{
+      transform: scale(1.05);
+}
