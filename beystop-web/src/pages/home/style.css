@@ -1,0 +1,23 @@
+@import url('../../index.css');
+
+body{
+      margin: 0;
+      padding: 0;
+      background-image:url('../../assets/images/filmbey.png') ;
+      background-size: cover;       
+      background-position: center; 
+      background-repeat: no-repeat; 
+      height: 100vh;                
+}
+.container-home{
+    position: relative;
+}
+
+body h1{
+    color: var(--neutral-01);
+    font-size: var(--headliner-01);
+    background-color: var(--neutral-04);
+    width: 458px;
+    padding: 10px;
+    text-align: center;
+}
