@@ -1,0 +1,39 @@
+@import url('../../index.css');
+
+.form-container {
+  width: 506px;
+  min-height: 600px;
+  background-color:black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+  position: relative;
+  z-index: 10;
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-content fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form-content fieldset legend {
+  color: var(--neutral-01);
+  font-size: var(--headliner-01);
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.container-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}

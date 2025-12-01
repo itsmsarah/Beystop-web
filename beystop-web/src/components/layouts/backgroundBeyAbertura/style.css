@@ -1,0 +1,14 @@
+@import url('../../../index.css');
+
+.bey-abertura-background{
+  display: flex;
+  height: 100vh;
+  background-image: url('../../../assets/images/bey-abertura.png');
+  background-size: cover;
+  background-position: left center;
+  background-repeat: no-repeat;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 80px;
+  position: relative;
+}
