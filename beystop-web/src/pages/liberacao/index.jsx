@@ -1,26 +1,22 @@
-import { Button } from "../../components/buttons"
+
 import { ContainerInput } from "../../components/inputs"
 import { ImgBeyReinasscense } from "../../components/layouts/backgroundBeyReinass"
+import {ContainerVeiculo} from '../../components/containerVeiculo'
 import './style.css'
 
 export const Liberacao = () =>{
     return(
         <ImgBeyReinasscense>
-        <div className="veiculo-container">
-            <div className="veiculo-content">
-                <h1>Cadastre seu veículo</h1>
-                <ContainerInput
-                 label="Placa"
+         <ContainerVeiculo titulo="Informe seu véiculo" text="Entrar">
+            <ContainerInput  label="Placa"
                     type="text"
                     id="placa"
-                    name="senha"
+                    name="placa"
                     placeholder="Informe o número da sua placa"/>
+           
 
-                   
-               
-            </div>
-             <Button type="text">Liberar</Button>
-        </div>
+
+        </ContainerVeiculo>
         
         </ImgBeyReinasscense>
     )
