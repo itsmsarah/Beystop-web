@@ -9,6 +9,7 @@ button{
       cursor: pointer;
   transition: transform 0.2s ease;
   font-size: var(--text-body-small);
+  color: var(--neutral-04);
   
 }
 button:hover{
