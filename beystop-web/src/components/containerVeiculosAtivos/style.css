@@ -1,0 +1,37 @@
+.veiculos-ativos-content{
+  margin: 30px 0px 10px 0;
+}
+.veiculos-ativos-content h2{
+ color: var(--neutral-01);
+ font-size: var(--headliner-02);
+ text-align: center;
+   
+}
+.informacoes-carro-container h3{
+    color: var(--neutral-01);
+    font-size: var(--headliner-05);
+    text-align: center;
+}
+.informacoes-carro-container{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.data-entrada{
+    background-color: var(--neutral-01);
+    width: 256px;
+    height: 50px;
+    text-align: center;
+    font-size: var(--text-body-big);
+    font-weight: bold;
+    padding: 14px 64px;
+}
+.horario-entrada{
+     background-color: var(--neutral-01);
+    width: 256px;
+    height: 50px;
+    text-align: center;
+     font-size: var(--text-body-big);
+    font-weight: bold;
+    padding: 14px 64px;
+}
