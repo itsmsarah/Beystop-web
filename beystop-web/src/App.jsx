@@ -6,6 +6,7 @@ import { Home } from './pages/home'
 import { Liberacao } from './pages/liberacao'
 import { Login } from './pages/login'
 import { Retirada } from './pages/retirada'
+import { VeiculosAtivos } from './pages/veiculosativos'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       {/* <Login/> */}
       {/* <Cadastro/> */}
       {/* <Liberacao/> */}
-      <Retirada/>
+      {/* <Retirada/> */}
+      <VeiculosAtivos/>
 
     </>
   )
