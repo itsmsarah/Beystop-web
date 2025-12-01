@@ -8,11 +8,11 @@ export const Cadastro = () => {
         <ImgBeyAbertura>
             <FormContainer titulo="Cadastro" height="618px" text="Cadastrar">
                 <ContainerInput
-                    label="E-mail"
+                    label="Nome Completo"
                     type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Informe seu e-mail"
+                    id="name"
+                    name="nome-completo"
+                    placeholder="Informe seu nome completo"
                 />
                 <ContainerInput
                     label="E-mail"
@@ -22,11 +22,11 @@ export const Cadastro = () => {
                     placeholder="Informe seu e-mail"
                 />
                 <ContainerInput
-                    label="E-mail"
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder="Informe seu e-mail"
+                    label="Senha"
+                    type="password"
+                    id="senha"
+                    name="senha"
+                    placeholder="Informe sua senha"
                 />
 
             </FormContainer>
