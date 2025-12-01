@@ -1,0 +1,16 @@
+@import url('../../../index.css');
+
+.background-bey-reinasscense{
+
+    display: flex;
+    height: 90vh;
+    background-image: url('../../../assets/images/beyonce.png');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+    position: relative;
+}

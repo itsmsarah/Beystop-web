@@ -1,7 +1,7 @@
 import { FormContainer } from "../../components/formContainer";
 import { ContainerInput } from "../../components/inputs";
 import { ImgBeyAbertura } from "../../components/layouts/backgroundBeyAbertura";
-import './style.css';
+
 
 export const Login = () => {
     return (

@@ -22,7 +22,7 @@
 .form-content fieldset {
   border: none;
   padding: 0;
-  margin: 0;
+  margin-bottom: 50px;
 }
 
 .form-content fieldset legend {

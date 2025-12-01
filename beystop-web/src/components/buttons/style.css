@@ -9,7 +9,7 @@ button{
       cursor: pointer;
   transition: transform 0.2s ease;
   font-size: var(--text-body-small);
-  margin-top: 50px;
+  
 }
 button:hover{
       transform: scale(1.05);
