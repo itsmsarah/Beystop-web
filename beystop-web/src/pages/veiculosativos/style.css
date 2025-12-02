@@ -8,7 +8,8 @@
     left: 50%;             
     transform: translate(-50%, -50%); 
     width: 664px;
-    height: 552px;
+     min-height: 552px; /* altura mínima, mas cresce conforme o conteúdo */
+    height: auto;       /* deixa o conteúdo expandir */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -55,4 +56,14 @@
      font-size: var(--text-body-big);
     font-weight: bold;
     padding: 14px 64px;
+}
+@media (max-width:430px){
+    .veiculos-ativos-container{
+    width: 300px;
+        height: auto; 
+    }
+    .veiculos-ativos-container h1{
+        font-size: var(--headliner-02);
+    }
+
 }

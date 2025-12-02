@@ -4,7 +4,7 @@ import './style.css'
 
 export const VeiculosAtivos = () => {
     return (
-        <div style={{ width: '100%', height: '90vh', position: 'relative' }}>
+        <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
             <FloatingLines
                 enabledWaves={['top', 'middle', 'bottom']}
                 lineCount={[10, 15, 20]}
