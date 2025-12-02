@@ -2,7 +2,7 @@ import { Button } from "../buttons";
 import ElectricBorder from "../EletricBorder/ElectricBorder";
 import './style.css'
 
-export const FormContainer = ({titulo = '',height = '',style = {},children,text = ''}) => {
+export const FormContainer = ({titulo = '',children,text = ''}) => {
     return (
 
         <ElectricBorder
@@ -14,8 +14,7 @@ export const FormContainer = ({titulo = '',height = '',style = {},children,text 
 
         <div
             className="form-container"
-            style={{ height, ...style }}
-        >
+                    >
             <form className="form-content">
                 <fieldset>
                     <legend>{titulo}</legend>

@@ -24,3 +24,12 @@ input::placeholder {
   color: var(--neutral-04);
   font-size: var(--text-btn);
 }
+
+
+
+@media (max-width:430px) {
+  input{
+    width:250px;
+  height: 54px;
+}
+}

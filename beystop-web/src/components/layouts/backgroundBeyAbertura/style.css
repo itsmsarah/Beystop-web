@@ -3,7 +3,7 @@
 .bey-abertura-background{
   display: flex;
   height: 90vh;
-  background-image: url('../../../assets/images/beyonce.png');
+  background-image: url('../../../assets/images/bey-abertura.png');
   background-size: cover;
   background-position: left center;
   background-repeat: no-repeat;
@@ -11,4 +11,21 @@
   align-items: center;
   padding-right: 80px;
   position: relative;
+}
+
+@media (max-width:830px) {
+     .bey-abertura-background{
+      padding-right: 150px;
+      height: 91vh;
+     }
+     
+}
+
+@media (max-width:430px) {
+    .bey-abertura-background{
+      padding-right: 40px;
+      height: 91vh;
+     }
+     
+
 }

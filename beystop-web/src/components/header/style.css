@@ -8,6 +8,7 @@ header {
     color: var(--neutral-01);
     padding: 20px 32px;
     position: relative;
+    height: 10vh;
 }
 
 .nav-header ul {

@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <Header/>
-      <Home/>
-      {/* <Login/> */}
+      {/* <Home/> */}
+      <Login/>
       {/* <Cadastro/> */}
       {/* <Liberacao/> */}
       {/* <Retirada/> */}
