@@ -1,6 +1,6 @@
 import'./style.css'
 
-export const ContainerInput = ({ id, label, type, name, placeholder ,widthWeb,height}) => {
+export const ContainerInput = ({ id, label, type, name, placeholder}) => {
     return (
         <div className="container-input">
             <label htmlFor={id}>{label}</label>
@@ -9,10 +9,6 @@ export const ContainerInput = ({ id, label, type, name, placeholder ,widthWeb,he
                 id={id}
                 name={name}
                 placeholder={placeholder}
-                style={{
-                    width: widthWeb || "376px",
-                    height: height || "54px"   
-                }}
             />
         </div>
     )

@@ -13,8 +13,8 @@ function App() {
     <>
       <Header/>
       {/* <Home/> */}
-      <Login/>
-      {/* <Cadastro/> */}
+      {/* <Login/> */}
+      <Cadastro/>
       {/* <Liberacao/> */}
       {/* <Retirada/> */}
       {/* <VeiculosAtivos/> */}

@@ -10,7 +10,7 @@ export const FormContainer = ({titulo = '',children,text = ''}) => {
                 speed={1}
                 chaos={0.5}
                 thickness={2}
-                style={{ borderRadius: 16 }}>
+                style={{ borderRadius: 16}}>
 
         <div
             className="form-container"
