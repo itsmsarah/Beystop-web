@@ -14,10 +14,10 @@ function App() {
       <Header/>
       {/* <Home/> */}
       {/* <Login/> */}
-      <Cadastro/>
+      {/* <Cadastro/> */}
       {/* <Liberacao/> */}
       {/* <Retirada/> */}
-      {/* <VeiculosAtivos/> */}
+      <VeiculosAtivos/>
 
     </>
   )
