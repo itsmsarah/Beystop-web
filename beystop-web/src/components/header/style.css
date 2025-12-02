@@ -4,26 +4,16 @@ header {
     background-color: var(--neutral-04);
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     color: var(--neutral-01);
-    padding: 20px 56px;
-   
+    padding: 20px 32px;
+    position: relative;
 }
 
 .nav-header ul {
     list-style: none;
     display: flex;
     gap: 62px;
-}
-
-.nav-header ul li {
-    font-size: var(--text-body-small);
-
-}
-
-header img {
-    width: 54px;
-    height: 51px;
 }
 
 .btns-header {
@@ -54,3 +44,74 @@ header img {
 .btn-cadastro:hover{
     transform: scale(1.05);
 }
+.hamburger {
+    width: 30px;
+    height: 22px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 4px;
+    width: 100%;
+    background: var(--neutral-01);
+    border-radius: 2px;
+    transition: 0.3s;
+}
+
+/* Animação quando abre */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+@media (max-width: 430px) {
+
+      .hamburger {
+        display: flex;
+    }
+
+    /* Esconde o menu e botões no mobile por padrão */
+    .nav-header,
+    .btns-header {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        width: 100%;
+        background: var(--neutral-04);
+        padding: 20px 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+    .nav-header{
+        z-index: 10;
+        position: absolute;
+        width: 50%;
+        left: 200px;
+    }
+
+    /* Quando ativo → aparece */
+    .nav-header.active,
+    .btns-header.active {
+        display: flex;
+    }
+
+    .nav-header ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .btns-header {
+        margin-top: 10px;
+    }
+}
+
+
