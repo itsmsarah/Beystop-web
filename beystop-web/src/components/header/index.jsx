@@ -2,14 +2,15 @@
 import './style.css'
 import Logo from "../../assets/images/logo.svg"
 import { useState } from 'react';
+import { Link } from 'react-router-dom'
 
-export const Header = () =>{
-     const [menuOpen, setMenuOpen] = useState(false);
-    return(
+export const Header = () => {
+    const [menuOpen, setMenuOpen] = useState(false);
+    return (
         <header>
             <img src={Logo} alt="imagem da beyonce" />
 
-             <div 
+            <div
                 className={`hamburger ${menuOpen ? "open" : ""}`}
                 onClick={() => setMenuOpen(!menuOpen)}
             >
@@ -19,18 +20,26 @@ export const Header = () =>{
             </div>
             <nav className={`nav-header ${menuOpen ? "active" : ""}`}>
                 <ul>
-                    <li>Veículos Ativos</li>
-                    <li>Liberação</li>
-                    <li>Retirada</li>
+                    <li>
+                        <Link to="/veiculos-ativos">Veículos Ativos</Link>
+                    </li>
+                    <li>
+                        <Link to="/liberacao">Liberação</Link>
+                    </li>
+                    <li>
+                        <Link to="/retirada">Retirada</Link>
+                    </li>
                 </ul>
             </nav>
 
-           
+
             <div className={`btns-header ${menuOpen ? "active" : ""}`}>
-                <a className="btn-login"href="">Login</a>
-                <a className="btn-cadastro" href="">Cadastra-se</a>
+
+                <Link className="btn-login" to="/login">Login</Link>
+
+                <Link className="btn-cadastro" to="/cadastro">Cadastrar-se</Link>
             </div>
-        
+
         </header>
 
     )

@@ -16,9 +16,12 @@ header {
     display: flex;
     gap: 62px;
 }
-.nav-header ul li {
-   font-size: var(--text-body-big);
+.nav-header a {
+  text-decoration: none;
+  color: var(--neutral-01);
+  font-size: var(--text-body-big);
 }
+
 
 .btns-header {
     display: flex;

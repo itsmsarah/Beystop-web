@@ -1,15 +1,17 @@
 import './style.css'
 import { Button } from "../buttons"
 
-export const ContainerVeiculo = ({titulo, children,text}) =>{
+export const ContainerVeiculo = ({titulo, children,text,loading,onSubmit}) =>{
     return(
-            <div className="veiculo-container">
-                    <div className="veiculo-content">
-                        <h1>{titulo}</h1>
-                        {children}
-                       
-                    </div>
-                     <Button>{text}</Button>
-                </div>
+             <form className="veiculo-container" onSubmit={onSubmit}>
+      <div className="veiculo-content">
+        <h1>{titulo}</h1>
+        {children}
+      </div>
+
+      <Button type="submit" disabled={loading}>
+        {loading ? "Carregando..." : text}
+      </Button>
+    </form>
     )
 }

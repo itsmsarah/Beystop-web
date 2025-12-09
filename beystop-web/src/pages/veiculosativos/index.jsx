@@ -1,4 +1,5 @@
 import FloatingLines from '../../components/FloatingLines/FloatingLines'
+import { Button } from '../../components/buttons'
 import { VeiculosAtivosContainer } from '../../components/containerVeiculosAtivos'
 import './style.css'
 
@@ -33,6 +34,9 @@ export const VeiculosAtivos = () => {
                     dataEntrada="11/10/2025"
                     horarioEntrada="00:30:20"
                 />
+           <div className="button-container-veiculos">
+            <Button>Deseja retirar algum véiculo?</Button>
+           </div>
 
             </div>
         </div>

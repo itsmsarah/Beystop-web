@@ -13,7 +13,8 @@ input {
   border-radius: 6px;
   border: 1px solid var(--neutral-02);
   background-color: var(--neutral-01);
-  color: var(--neutral-01);
+  color: var(--neutral-02);
+  font-size: var(--text-body-small);
 }
 label{
       color: var(--neutral-01);
@@ -22,7 +23,7 @@ label{
 
 input::placeholder {
   color: var(--neutral-04);
-  font-size: var(--text-btn);
+  font-size: var(--text-body-small);
 }
 
 
