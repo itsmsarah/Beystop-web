@@ -44,9 +44,10 @@ export const Liberacao = () => {
   return (
     <ImgBeyReinasscense>
       <ContainerVeiculo
-        titulo="Informe seu veículo"
+        titulo="Libere seu veículo"
         text={loading ? "Liberando..." : "Entrar"}
         onSubmit={handleLiberacao}
+         useSubmit={true}
       >
         <ContainerInput
           label="Placa"
@@ -54,6 +55,7 @@ export const Liberacao = () => {
           id="placa"
           name="placa"
           value={placa}
+         
           onChange={(e) => setPlaca(e.target.value.toUpperCase())}
           placeholder="Informe o número da sua placa"
         />
