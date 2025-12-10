@@ -1,9 +1,11 @@
+import { useNavigate } from 'react-router-dom'
 import FloatingLines from '../../components/FloatingLines/FloatingLines'
 import { Button } from '../../components/buttons'
 import { VeiculosAtivosContainer } from '../../components/containerVeiculosAtivos'
 import './style.css'
 
 export const VeiculosAtivos = () => {
+    const navigate = useNavigate();
     return (
         <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
             <FloatingLines
@@ -34,9 +36,10 @@ export const VeiculosAtivos = () => {
                     dataEntrada="11/10/2025"
                     horarioEntrada="00:30:20"
                 />
-           <div className="button-container-veiculos">
-            <Button>Deseja retirar algum véiculo?</Button>
-           </div>
+                <div className="button-container-veiculos">
+                    <Button onClick={() => navigate('/retirada')}>
+                        Deseja retirar algum veículo?
+                    </Button>           </div>
 
             </div>
         </div>

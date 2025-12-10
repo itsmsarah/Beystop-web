@@ -21,7 +21,7 @@ export const Header = () => {
             <nav className={`nav-header ${menuOpen ? "active" : ""}`}>
                 <ul>
                     <li>
-                        <Link to="/veiculos-ativos">Veículos Ativos</Link>
+                        <Link to="/veiculosativos">Veículos Ativos</Link>
                     </li>
                     <li>
                         <Link to="/liberacao">Liberação</Link>
