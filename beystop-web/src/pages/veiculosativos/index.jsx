@@ -4,31 +4,31 @@ import { Button } from '../../components/buttons'
 import { VeiculosAtivosContainer } from '../../components/containerVeiculosAtivos'
 import './style.css'
 import { useEffect, useState } from 'react'
-import api from '../../../api'
+import { getCars } from '../../../api'
 
 export const VeiculosAtivos = () => {
   const navigate = useNavigate();
   const [data, setData] = useState([]);
  
 
-  const veiculosAtivos = async () => {
-    try {
-      const res = await api.get(`/api/veiculos`);
-      console.log("Resposta da API:", res.data);
-      setData(res.data); // <-- Aqui você coloca os veículos da API no estado
-    } catch (err) {
-      console.log("Erro ao buscar veículos:", err);
-    }
-  };
-
   useEffect(() => {
+    const veiculosAtivos = async () => {
+      try {
+        const res = await getCars();
+        console.log("Resposta da API:", res); // Corrigido: sem .data
+        setData(res); // Corrigido: sem .data
+      } catch (err) {
+        console.log("Erro ao buscar veículos:", err);
+      }
+    };
+
     veiculosAtivos();
   }, []);
 
 
 
   return (
-    <div style={{ width: '100%', height: '100vh', position: 'relative' }}>
+    <div style={{ width: '100%', height: '100vh', position: 'relative' }} className="veiculos-ativos-page">
       <FloatingLines
         enabledWaves={['top', 'middle', 'bottom']}
         lineCount={[10, 15, 20]}
@@ -41,7 +41,6 @@ export const VeiculosAtivos = () => {
 
       <div className="veiculos-ativos-container">
         <h1>Veículos Ativos</h1>
-
 
         {data.map((item, index) => (
           <VeiculosAtivosContainer

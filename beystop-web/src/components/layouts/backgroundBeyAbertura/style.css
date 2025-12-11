@@ -2,7 +2,7 @@
 
 .bey-abertura-background {
   display: flex;
-  height: 90vh;
+  height: 100vh;
   background-image: url('../../../assets/images/bey-abertura.png');
   background-size: cover;
   background-position: left center;
@@ -18,7 +18,7 @@
   .bey-abertura-background {
     justify-content: center;
     padding-right: 0;
-    height: 91vh;
+    height: 100vh;
   }
 }
 
@@ -26,6 +26,6 @@
   .bey-abertura-background {
     justify-content: center;
     padding-right: 0;
-    height: 95vh;
+    height: 100vh;
   }
 }

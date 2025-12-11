@@ -1,12 +1,12 @@
 .veiculos-ativos-content {
     margin: 30px 0px 10px 0;
+    width: 80%;
 }
 
 .veiculos-ativos-content h2 {
     color: var(--neutral-01);
     font-size: var(--headliner-02);
     text-align: center;
-
 }
 
 .informacoes-carro-container h3 {
@@ -18,34 +18,33 @@
 .informacoes-carro-container {
     display: flex;
     justify-content: center;
-    gap: 70px;
+    gap: 5%;
 }
 
 .data-entrada {
     background-color: var(--neutral-01);
-    width: 256px;
-    height: 50px;
     text-align: center;
     font-size: var(--text-body-big);
     font-weight: bold;
     padding: 14px 64px;
+    width: 100%;
 }
 
 .horario-entrada {
     background-color: var(--neutral-01);
-    width: 256px;
-    height: 50px;
     text-align: center;
     font-size: var(--text-body-big);
     font-weight: bold;
     padding: 14px 64px;
 }
 
-@media (max-width:430px) {
+@media (max-width:500px) {
     .informacoes-carro-container {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 30px;
+        width: 100%;
     }
 
     .veiculos-ativos-content h2 {

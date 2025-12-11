@@ -3,7 +3,7 @@
 .background-bey-reinasscense{
 
     display: flex;
-    height: 90vh;
+    height: 100vh;
     background-image: url('../../../assets/images/beyonce.png');
     background-size: cover;
     background-position: left center;

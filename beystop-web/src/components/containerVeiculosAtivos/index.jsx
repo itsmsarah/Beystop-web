@@ -1,6 +1,6 @@
 import './style.css'
 
-export const VeiculosAtivosContainer = ({placa,dataEntrada,horarioEntrada,data,horario}) => {
+export const VeiculosAtivosContainer = ({ placa, dataEntrada, horarioEntrada, data, horario }) => {
     return (
         <div className="veiculos-ativos-content">
             <h2>{placa}</h2>
@@ -16,13 +16,9 @@ export const VeiculosAtivosContainer = ({placa,dataEntrada,horarioEntrada,data,h
                     <p className='horario-entrada'>{horarioEntrada}</p>
                 </div>
             </div>
-            
-            
+        </div>
 
 
-            </div>
 
-
-        
     )
 }
