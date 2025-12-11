@@ -19,6 +19,7 @@
     display: flex;
     justify-content: center;
     gap: 5%;
+    margin-top: 12px;
 }
 
 .data-entrada {
@@ -50,5 +51,11 @@
     .veiculos-ativos-content h2 {
         font-size: var(--headliner-03) !important;
         margin-bottom: 14px;
+    }
+}
+@media (max-width:830px) {
+
+    .informacoes-data-content{
+
     }
 }
